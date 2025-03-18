@@ -1,0 +1,11 @@
+theme: jekyll-theme-cayman
+markdown: kramdown
+
+title: Урегулирование Споров и Медиация
+description: "Досудебное урегулирование споров: Решаем конфликты быстро, выгодно и без стресса"
+
+is_project_page: false
+show_downloads: false
+# google_analytics: [Your Google Analytics tracking ID]
+
+baseurl: "/ghp_example"

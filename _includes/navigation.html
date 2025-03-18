@@ -1,0 +1,5 @@
+<h1 class="project-name"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+<h2 class="project-tagline">{{ site.description }}</h2>
+{% for item in site.data.navigation %}
+<a class="btn" href="{{ site.baseurl }}/{{ item.section }}">{{ item.title }}</a></li>
+{% endfor %}
