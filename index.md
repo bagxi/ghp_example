@@ -24,4 +24,4 @@ title: "Чё уставился?"
 
 ---
 
-&copy; [2025] Yuri Gagarin. All rights reserved.
+&copy; 2025 Yuri Gagarin. All rights reserved.

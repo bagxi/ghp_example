@@ -5,3 +5,5 @@ author:
   name: "Юрий Гагарин"
   email: yuri.gagarin@example.com
 show_downloads: false
+github:
+  is_project_page: false
