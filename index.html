@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>ABP Technologies LLC</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+            --deep-navy: #001f3f;
+            --white: #ffffff;
+            --slate-gray: #708090;
+            --teal-accent: #008080;
+            --gold-highlight: #ffd700;
+            --dark-bg: #0a192f;
+        }
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Poppins", sans-serif;
+        }
+        .bg-deep-navy {
+            background-color: var(--deep-navy);
+        }
+        .bg-dark {
+            background-color: var(--dark-bg);
+        }
+        .text-teal-accent {
+            color: var(--teal-accent);
+        }
+        .text-gold-highlight {
+            color: var(--gold-highlight);
+        }
+        .border-slate-gray {
+            border-color: var(--slate-gray);
+        }
+        .hover-bg-teal-accent:hover {
+            background-color: var(--teal-accent);
+        }
+        .hover-text-gold-highlight:hover {
+            color: var(--gold-highlight);
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+  <div class="relative flex size-full min-h-screen flex-col"
+    style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');">
+    <div class="flex h-full grow flex-col">
+      <header class="sticky top-0 z-50 bg-dark/80 backdrop-blur-sm">
+        <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-10 py-4">
+          <a class="flex items-center gap-4 text-white" href="#hero">
+            <svg class="h-8 w-8 text-teal-accent" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <h2 class="text-xl font-bold leading-tight tracking-tight">АБП Технолоджис</h2>
+          </a>
+          <nav class="hidden items-center gap-8 md:flex">
+            <a class="text-sm font-medium leading-normal text-slate-gray hover-text-gold-highlight"
+              href="#expertise">Наши компетенции</a>
+            <a class="text-sm font-medium leading-normal text-slate-gray hover-text-gold-highlight"
+              href="#how-we-work">Как мы работаем</a>
+            <a class="text-sm font-medium leading-normal text-slate-gray hover-text-gold-highlight" href="#people">Люди
+              и что-то там</a>
+            <a class="text-sm font-medium leading-normal text-slate-gray hover-text-gold-highlight"
+              href="#impact">Портфолио</a>
+            <a class="text-sm font-medium leading-normal text-slate-gray hover-text-gold-highlight"
+              href="#contact">Контакты</a>
+          </nav>
+
+          <!-- <button
+            class="hidden min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md border border-slate-gray bg-transparent px-4 py-2 text-sm font-bold leading-normal tracking-wide text-white transition-colors hover:bg-teal-600 md:flex">
+            <span class="truncate">Book a Consultation</span>
+          </button> -->
+        </div>
+      </header>
+      <main class="flex-1">
+        <section class="relative flex min-h-[60vh] items-center justify-center bg-cover bg-center py-20" id="hero"
+          style='background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBm2Qqk8ldY8E9yIxfiSYGzJ8SYxTQe0fBOiYNzKGtCnCX-3MPG8IvHHIAHlAxjUBMokI3qBmICcEmFOTFnkJ6RFkgAW9Qm-VV5rjQHoW-O7KMFl4DJuIWW2XZH5T6srPM00ccMKyIdL12pnaLLdyqWVr1vi1Ga1pjD6Qf6W1LrHZnU8IGT3L-0EePlMMttK5Iti_dj77hlUuRNz33hWbmi4ucrN6YojKE7jlEmrVpDyuuyQTwdlYZK-P0xMbp-U3-9Gnha3A1O4Nw");'>
+          <div class="container mx-auto px-10 text-center">
+            <h1 class="text-4xl font-extrabold leading-tight tracking-tighter text-white md:text-6xl">Меняйте.
+              Совершенствуйте. Процветайте.</h1>
+            <p class="mt-4 text-lg text-slate-gray md:text-xl">Мы разрабатываем и помогаем бизнесу провести комплексную
+              трансформацию. Оптимизируем бизнес-процессы. Реанимируем проекты, повышая их операционную эффективность.
+              Разрабатываем стратегию компании (отделов, представительств, филиалов).</p>
+            <div class="mt-8 flex justify-center">
+              <a href="#contact">
+                <button
+                  class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md border border-slate-gray bg-transparent px-8 py-4 text-lg font-bold leading-normal tracking-wide text-white transition-colors hover:bg-teal-600">
+                  <span class="truncate">Связаться с нами</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="bg-deep-navy py-20" id="expertise">
+          <div class="container mx-auto px-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl font-bold leading-tight tracking-tight text-white">Наши компетенции</h2>
+            </div>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">flowsheet</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Цифровизация бизнеса</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">trending_up</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Оптимизация бизнес-процессов</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">corporate_fare</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Стратегия развития компании</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">public</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Стратегия развития региона</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">search</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Исследование рынка</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">lan</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Разработка оргструктуры</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center md:col-span-2 lg:col-span-1">
+                <span class="material-symbols-outlined text-4xl text-teal-accent">task_alt</span>
+                <h3 class="mt-4 text-xl font-bold text-teal-accent">Реализация проектов</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20" id="how-we-work">
+          <div class="container mx-auto px-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl font-bold leading-tight tracking-tight text-white">Как мы работаем</h2>
+            </div>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+              <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-5xl text-gold-highlight">lightbulb</span>
+                <h4 class="mt-4 text-xl font-bold text-white">1. Анализ и стратегия</h4>
+                <p class="mt-2 text-slate-gray">Мы начинаем с глубокого понимания ваших задач и целей, разрабатывая
+                  индивидуальную стратегию.</p>
+              </div>
+              <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-5xl text-gold-highlight">groups</span>
+                <h4 class="mt-4 text-xl font-bold text-white">2. Сотрудничество и внедрение</h4>
+                <p class="mt-2 text-slate-gray">Мы тесно работаем с вашей командой для реализации стратегии, обеспечивая
+                  её безболезненную интеграцию.</p>
+              </div>
+              <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-5xl text-gold-highlight">monitoring</span>
+                <h4 class="mt-4 text-xl font-bold text-white">3. Оценка и развитие</h4>
+                <p class="mt-2 text-slate-gray">Мы отслеживаем результаты, измеряем эффект и обеспечиваем устойчивый
+                  рост вашего бизнеса.</p>
+              </div>
+            </div>
+            <div class="mt-12 text-center text-lg text-slate-gray">
+              <p>АБП Технолоджис — ваш надежный партнер в проведении значимых изменений и укреплении конкурентных
+                преимуществ компании.
+                Наш подход основан на сотрудничестве и ориентации на результат: мы не только разрабатываем стратегии, но
+                и помогаем эффективно их внедрять.
+                Мы уверены, что то, что работает сегодня, завтра может потерять эффективность, поэтому фокусируемся на
+                создании гибких и устойчивых организаций.</p>
+            </div>
+          </div>
+        </section>
+        <section class="bg-deep-navy py-20" id="people">
+          <div class="container mx-auto px-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl font-bold leading-tight tracking-tight text-white">Люди и что-то там</h2>
+            </div>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-highlight">school</span>
+                <h3 class="mt-4 text-xl font-bold text-gold-highlight">Обучение сотрудников</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-highlight">support_agent</span>
+                <h3 class="mt-4 text-xl font-bold text-gold-highlight">Консалтинг топ-менеджмента</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-highlight">diversity_3</span>
+                <h3 class="mt-4 text-xl font-bold text-gold-highlight">Работа с сопротивлением сотрудников</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-highlight">model_training</span>
+                <h3 class="mt-4 text-xl font-bold text-gold-highlight">Управление знаниями</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-highlight">local_fire_department</span>
+                <h3 class="mt-4 text-xl font-bold text-gold-highlight">Работа с мотивацией сотрудников</h3>
+              </div>
+              <div class="rounded-lg bg-dark p-6 text-center">
+                <span class="material-symbols-outlined text-4xl text-gold-highlight">psychology</span>
+                <h3 class="mt-4 text-xl font-bold text-gold-highlight">Формирование корпоративной культуры</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20" id="impact">
+          <div class="container mx-auto px-10">
+            <h3 class="mb-8 text-center text-2xl font-bold leading-tight tracking-tight text-white">Наши клиенты</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+              <div class="flex flex-col items-center gap-4 text-center">
+                <div class="h-24 w-24 rounded-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmG6k70OKITX-o3rJ9nbYyaGVp9FByddYwFAAzBr_iKnHGlyHDDhLlWG_PmrCYcfs_OI9LK5gVCTXm5Pij--vPZhLqp5exrXIIYCc-Y1u9ehnjUebtZ41AfHAqAwbK-zZJ72GipwlfuPIspxVvAgD11kQcKp-9mGxWh2GnWrzqRU4KFWlkUmLet9IGtYD_wDOf_y71tZrPY_F85uv81BBZRjKBRH5pTh_rr15Jn7IZch0jGnFKF5pdmS-J7pwgtwGM9xILQDn-WPY");'>
+                </div>
+                <p class="text-base font-medium leading-normal text-white">TechCorp</p>
+              </div>
+              <div class="flex flex-col items-center gap-4 text-center">
+                <div class="h-24 w-24 rounded-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVcc-Falm-nZvn-NHOq8ymuGWLclOAvNiQjdlFUpET0GCH6UNvct4BWPgqZWG5vvlew27a3-w2nL9fnjq8ZzW_epoMJ30u1bBcj3POILD7z460FNLmqNwlQupNbI7mWuAgGaJqSfkSNjJB1uXOalsweYWzQjsOSCOrXM-URcyOmTjtiSNb9RYa0-zBnnwpzE426yQ3_5sEccCl0juptqYQ8g1672Ue9WIjcm-t8D-5uJjqB-SF257ez0MOLajAERhVscwxtQzsVNA");'>
+                </div>
+                <p class="text-base font-medium leading-normal text-white">FinServ</p>
+              </div>
+              <div class="flex flex-col items-center gap-4 text-center">
+                <div class="h-24 w-24 rounded-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmk2Po7UKuH0DcY_yKJvPibcaesM_3cu81-ftID_TYQ92VXneEhdZwk07miMAu6zy_sXRF7KWyBYYrxvYnLlGyFsHvM5Ss6zboQ5yHRaHqaRxewE3XHhw9aXitrVWQ7AcGcPnOO03Z6MqPmPTQCfVJp_LRnTYTXgYwgxQDTY6urKZf2GC_-fTVy200Rq4FzrQKPBh_ynaKUIDqeD1Oyi_jGJUjj52au0ZcZjQjZ1G68TM8Uk5J9JiU6wdCDXg7eh8gY4YkAGPkBnU");'>
+                </div>
+                <p class="text-base font-medium leading-normal text-white">HealthCare Inc.</p>
+              </div>
+              <div class="flex flex-col items-center gap-4 text-center">
+                <div class="h-24 w-24 rounded-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYy1_MKPH8PPwCIX4YPbiCG7Pbe7fm7X6tgvAL-NO6H78wWhRfmfjD4cVwYVU7TroK5x1GxBF7KZRcpTajrD30KcoAnMImFrh9prxGvD-zU1iH9Qvi_--3HE9wo1YRuc4yk_vOag5PU0xCZPKoqZ6jmMFHtxK3kofoLG7mg5QjBg5j-C8NCV-3itLgM4qXPCoG0aBt3aPJEA4VTjLfmpYc0_z5ryJZrCzarjPJ7wrb5YoEsnTI2xlCk2aLk3s-YjTQebhi-4MMFFY");'>
+                </div>
+                <p class="text-base font-medium leading-normal text-white">RetailCo</p>
+              </div>
+              <div class="flex flex-col items-center gap-4 text-center">
+                <div class="h-24 w-24 rounded-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnimCjnZXP7Iu7beJyu_MDodWrlxYV5eXPdxTgYP0I3XQjfUP6452oi0yfDtVjSuGg_hpixDupVuNaUSGTq8G-ccOkaMRCZGIOMnQJuPGtMr8b1XRdJY0Ez-W3NywligcYYo27AyQd5OmTg3aK6XU_aKrte2BCWpwWsks1obHZrKabd5kfdVqsSIGLb5PmXPoAqrMjcJerSCyUJGa0RDARovaz_D73hTvw_C9GGG40TxChnS6eCoXcKvRwXrITv7QLCTf15NZ4Y6k");'>
+                </div>
+                <p class="text-base font-medium leading-normal text-white">Energy Solutions</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-deep-navy py-20" id="contact">
+          <div class="container mx-auto px-10">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2 class="text-3xl font-bold leading-tight tracking-tight text-white">Связаться с нами</h2>
+              <p class="mt-4 text-lg text-slate-gray"> Готовы вывести бизнес на новый уровень? Свяжитесь с нами, чтобы
+                назначить консультацию. </p>
+            </div>
+            <div class="mt-12 max-w-xl mx-auto">
+              <div class="mt-8 text-center text-slate-gray">
+                <div class="space-y-2">
+                  <p><span
+                      class="material-symbols-outlined align-middle text-teal-accent mr-2">location_on</span>Республика
+                    Беларусь, г. Минск, пр-т Независимости, 77, ком. 44 </p>
+                  <p><span class="material-symbols-outlined align-middle text-teal-accent mr-2">email</span><a
+                      class="text-teal-accent hover:underline"
+                      href="mailto:contact@abptechnologies.com">contact@abptechnologies.com</a></p>
+                  <p><span class="material-symbols-outlined align-middle text-teal-accent mr-2">phone</span><a
+                      class="text-teal-accent hover:underline" href="tel:+1-555-123-4567">+1 (555) 123-4567</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-dark">
+        <div class="container mx-auto px-10 py-12 text-center text-slate-gray">
+          <div class="mt-8 flex justify-center gap-6">
+            <a class="text-slate-gray hover-text-gold-highlight" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                </path>
+              </svg>
+            </a>
+            <a class="text-slate-gray hover-text-gold-highlight" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <p class="mt-8">© 2025 ООО АБП Технолоджис. Все права защищены.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
