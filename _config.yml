@@ -1,5 +1,9 @@
 theme: jekyll-theme-cayman
 markdown: kramdown
+sass:
+  style: compressed
+  load_paths:
+    - _sass
 
 title: Урегулирование Споров и Медиация
 description: "Досудебное урегулирование споров: Решаем конфликты быстро, выгодно и без стресса"

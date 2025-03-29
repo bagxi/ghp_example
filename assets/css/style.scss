@@ -1,9 +1,5 @@
 ---
 ---
 
+@import "variables"; /* Use the custom variables */
 @import "{{ site.theme }}";
-
-.page-header {
-  background-color: #FFD700;
-  background-image: linear-gradient(120deg, #FFA500, #FFD700);
-}
